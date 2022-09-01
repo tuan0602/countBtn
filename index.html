@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="increase-btn">
+            <i class="fa-sharp fa-solid fa-chevron-up"></i>
+        </div>
+        <div id="total">0</div>
+        <div id="decrease-btn">
+            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+        </div>
+
+    </div>
+    <script>
+            const btnIncrease = document.getElementById("increase-btn");
+            const btnDecrease = document.getElementById("decrease-btn");
+            const total = document.getElementById("total");
+            var count = 0;
+            // handle increase
+            const handleIncrease = function() {
+                if(count >= 0)
+                
+                count++;
+                total.innerHTML = count;
+            }
+            // handle decrease
+            const handleDecrease = function() {
+                if(count > 0) {
+                    count--;
+                
+                total.innerHTML = count;
+                }
+                
+
+            }
+            btnIncrease.addEventListener('click', handleIncrease)
+            btnDecrease.addEventListener('click', handleDecrease)
+
+            
+            
+
+
+    </script>
+</body>
+</html>

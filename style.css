@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper { 
+    margin-top: 50px;
+    
+    color: #000;
+}
+#increase-btn, #decrease-btn, #total {
+    
+    text-align: center;
+    font-size: 30px;
+}
+
+.total {
+
+}
+
+
